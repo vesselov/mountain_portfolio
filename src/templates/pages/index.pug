@@ -1,0 +1,106 @@
+extends ../template
+
+block variables
+  - var title = 'Vesselov|Личный сайт веб-разработчика'
+block content
+  .preloader
+    .preloader__inner
+      .preloader__spinner
+        .preloader__animation
+        .preloader__percents.js-percents 0%
+
+  section.l-section.l-welcome
+    .l-parallax#parallaxMouse
+      .l-parallax__layer
+        img(src="assets/images/parallax-1.png")
+      .l-parallax__layer
+        img(src="assets/images/parallax-2.png")
+      .l-parallax__layer
+        img(src="assets/images/parallax-3.png")
+      .l-parallax__layer
+        img(src="assets/images/parallax-4.png")
+      .l-parallax__layer
+        img(src="assets/images/parallax-5.png")
+      .l-parallax__layer
+        img(src="assets/images/parallax-6.png")
+      .l-parallax__layer
+        img(src="assets/images/parallax-7.png")
+      .l-parallax__layer
+        img(src="assets/images/parallax-8.png")
+      .l-parallax__layer
+        img(src="assets/images/parallax-9.png")
+      .l-parallax__layer
+        img(src="assets/images/parallax-10.png")
+    .l-welcome__inner.l-section__wrapper
+      button.l-welcome__authorization.js-authorization.active#authorizationButton Авторизоваться  
+      .l-card__wrapper
+        .l-card
+          .l-card__welcome.active  
+            .l-card__content
+              .c-user.js-user.c-user--welcome
+                .c-user__face
+                h1.c-user__name Веселов Евгений
+                p.c-user__prof Личный сайт веб разработчика
+                ul.c-social.c-social--welcome
+                  li.c-social__item
+                    a.c-social__link(xlink:href="https://vk.com" target="_blank")
+                      svg.c-social__icon.c-social__icon--vk
+                        use(xlink:href="assets/images/vk.svg")
+
+                  li.c-social__item
+                    a.c-social__link(href="https://github.com" target="_blank")
+                      svg.c-social__icon.c-social__icon--github
+                        use(xlink:href="assets/images/github.svg")
+                  li.c-social__item
+                    a.c-social__link(href="https://linkdin.com" target="_blank")
+                      svg.c-social__icon.c-social__icon--in
+                        use(xlink:href="assets/images/in.svg")
+
+              nav.nav-welcome
+                ul.nav-welcome__list
+                  li.nav-welcome__item
+                    a.nav-welcome__link(href="./portfolio.html") Мои работы
+                  li.nav-welcome__item
+                    a.nav-welcome__link(href="./about.html") обо мне
+                  li.nav-welcome__item
+                    a.nav-welcome__link(href=".html") блог
+            form.l-card__authorization#authorization(method="post")
+              .l-card__content
+                .c-block-title__wrapper
+                  .c-block-title.c-block-title--authorization
+                    h4.c-block-title__text.js-slider-subtitle  Авторизуйтесь
+                .c-authorization-form__validation#validation1
+                .c-authorization-form
+                  .c-authorization-form__item
+                    label.c-authorization-form__lebel
+                      input.c-authorization-form__input(name="text" type="text" placeholder="Логин" required)
+                  .c-authorization-form__item
+                    label.c-authorization-form__lebel
+                      input.c-authorization-form__input(name="password" type="password" placeholder="пароль" required)
+                .c-checkbox   
+                  .c-checkbox__box.c-checkbox__box--checkbox  
+                    input.c-checkbox__input#noRobot(name="noRoboto" type="password") 
+                    label.c-checkbox__label
+                  p.c-checkbox__text Я человек
+                p.l-card__content-text Вы точно не робот?  
+                .l-card__content-radio
+                  .c-checkbox
+                    .c-checkbox__box.c-checkbox__box--radio
+                      inpute.c-checkbox__input#radio(value="1" name="radio" type="radio") 
+                      label.c-checkbox__label
+                    p.c-checkbox__text Да
+                  .c-checkbox
+                    .c-checkbox__box.c-checkbox__box--radio
+                      inpute.c-checkbox__input#radio(value="0" name="radio" type="radio") 
+                      label.c-checkbox__label
+                    p.c-checkbox__text не уверен
+              .nav-welcome 
+                ul.nav-welcome__list
+                  li.nav-welcome__item   
+                    a.nav-welcome__link.js-authorization На главную 
+                  li.nav-welcome__item
+                    inpute.nav-welcome__link(type="submit" value="Войти")      
+      footer.l-welcome__footer
+        p © Веселов Евгений | создано с любовью в LoftSchool | 2017
+
+

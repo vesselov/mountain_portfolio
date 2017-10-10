@@ -1,0 +1,159 @@
+extends ../template
+
+block variables
+  - var title = 'Vesselov|Личный сайт веб-разработчика'
+block content
+  .preloader
+    .preloader__inner
+      .preloader__spinner
+        .preloader__animation
+        .preloader__percents.js-percents 0%
+
+  .wrapper
+    section.l-section.l-hero#parallaxScroll
+      .l-hero__background.js-hero-bg  
+        img(src="assets/images/bg-main.jpg")   
+      .l-section__wrapper.l-hero__inner
+        ul.c-social.c-social--hero
+          li.c-social__item
+            a.c-social__link(href="https://vk.com" target="_blank")
+              svg.c-social__icon.c-social__icon--vk
+                use(xlink:href="assets/images/vk.svg")
+          li.c-social__item
+            a.c-social__link(href="https://vk.com" target="_blank")
+              svg.c-social__icon.c-social__icon--vk
+                use(xlink:href="assets/images/vk.svg")
+          li.c-social__item
+            a.c-social__link(href="https://vk.com" target="_blank")
+              svg.c-social__icon.c-social__icon--vk
+                use(xlink:href="assets/images/vk.svg")      
+
+      
+        .l-hero__content
+          svg.js-hero-title.l-hero__portfolio (viewBox="0 0 1175.495 313.961")
+            use(xlink:href="assets/images/sprite.svg#icons--portfolio_header")
+          .c-user.js-user.c-user--hero
+            .c-user__face
+            h1.c-user__name Веселов Евгений
+            .c-user__prof Личный сайт разработчика
+        svg.c-arrow.c-arrow--hero#arrow(viewBox="0 0 25.18 16.164")
+          use(xlink:href="assets/images/sprite.svg#icons--arrow_down")
+        a.c-hamburger.js-hamburger#hamburger
+          i.c-hamburger__stick.c-hamburger__stick--top
+            i.c-hamburger__stick.c-hamburger__stick--middle
+              i.c-hamburger__stick.c-hamburger__stick--bottom
+    .l-navigation.js-navigation 
+      .c-navigation
+        ul.c-navigation__list
+          li.c-navigation__item
+            a.c-navigation__link(href="./portfolio.html") Мои работы
+          li.c-navigation__item
+            a.c-navigation__link(href="./about.html") обо мне 
+          li.c-navigation__item
+            a.c-navigation__link(href="./blog.html") Блог
+          li.c-navigation__item
+            a.c-navigation__link(href="./index.html") Авторизация
+    section.l-section.l-about.js-section-two.animate(data-animation="toSkills")
+      .l-about__col.l-about__col--left
+        svg.c-triangle.c-triangle__left.c-triangle--about(viewbox="0 0 1000 150" preserveAspectRatio="none")
+          polygon(points="0,0 0,150 1000, 150")
+        .l-about__wrapper.l-about__wrapper--left  
+          .l-about__title
+            .c-section-title.c-section-title--about
+              svg.c-section-title__img
+                use(xlink:href="assets/images/sprite.svg#icons--about_header")
+
+              .c-section-title__text обо мне
+          .c-about
+            .c-about__pic(style="background-image: url('assets/images/face.jpg')")
+            .c-block-title__wrapper
+              .c-block-title.c-block-title--about
+                h4.c-block-title__text.js-slider-subtitle кто я 
+            .c-block-text
+              p Меня зовут Евгений, мне 28 лет я из Казахстана г. Атырау    
+      .l-about__col.l-about__col--right
+        svg.c-triangle.c-triangle__right.c-triangle--about(viewbox="0 0 1000 150" preserveAspectRatio="none")
+          polygon (points="0,150 1000,150 1000,0" )
+        .l-about__wrapper.l-about__wrapper--right
+          .l-skills
+            .c-block-title__wrapper
+              .c-block-title.c-block-title--skills
+                h4.c-block-title__text.js-slider-subtitle
+            .c-block-text
+              p   Больше всего меня привлекет Frontend разработка, но я также знакома и могу решать не сложные задачи на Backend. Но давайте по порядку.  
+            ul.l-skills-group#skills
+              li.l-skills-group__item
+              h5.l-skills-group__title Frontend
+                ul.l-skills-list
+                  li.c-skills-list__item
+                    .c-skill
+                      svg.c-skill__circle
+                        circle.c-skills__circle-under(cx="50%" cy="50%" r="50")
+                        circle.c-skills__circle-above.c-skills__circle-above--html(cx="50%" cy="50%" r="50" transform="rotate(-90 60 60)")
+                      h6.c-skill__title HTML5
+                  li.c-skills-list__item
+                    .c-skill
+                      svg.c-skill__circle
+                        circle.c-skills__circle-under(cx="50%" cy="50%" r="50")
+                        circle.c-skills__circle-above.c-skills__circle-above--css(cx="50%" cy="50%" r="50" transform="rotate(-90 60 60)")
+                      h6.c-skill__title css3
+                  li.c-skills-list__item
+                    .c-skill
+                      svg.c-skill__circle
+                        circle.c-skills__circle-under(cx="50%" cy="50%" r="50")
+                        circle.c-skills__circle-above.c-skills__circle-above--js(cx="50%" cy="50%" r="50" transform="rotate(-90 60 60)")
+                      h6.c-skill__title JavaScript &amp; jQuery
+                  
+                li.l-skills-group__item
+                  h5.l-skills-group__title Backend
+                  ul.l-skills-list
+                    li.c-skills-list__item
+                      .c-skill
+                        svg.c-skill__circle
+                          circle.c-skills__circle-under( cx="50%" cy="50%" r="50")
+                          circle.c-skills__circle-above.c-skills__circle-above--php( cx="50%" cy="50%" r="50" ransform="rotate(-90 60 60)")
+                        h6.c-skill__title php 
+                    li.c-skills-list__item
+                      .c-skill
+                        svg.c-skill__circle
+                          circle.c-skills__circle-under( cx="50%" cy="50%" r="50")
+                          circle.c-skills__circle-above.c-skills__circle-above--mySQL( cx="50%" cy="50%" r="50" ransform="rotate(-90 60 60)")
+                        h6.c-skill__title mysql
+                    li.c-skills-list__item
+                      .c-skill
+                        svg.c-skill__circle
+                          circle.c-skills__circle-under( cx="50%" cy="50%" r="50")
+                          circle.c-skills__circle-above.c-skills__circle-above--npm( cx="50%" cy="50%" r="50" ransform="rotate(-90 60 60)")
+                        h6.c-skill__title Node.js &amp; npm
+                    li.c-skills-list__item
+                      .c-skill
+                        svg.c-skill__circle
+                          circle.c-skills__circle-under( cx="50%" cy="50%" r="50")
+                          circle.c-skills__circle-above.c-skills__circle-above--mongo( cx="50%" cy="50%" r="50" ransform="rotate(-90 60 60)")
+                        h6.c-skill__title Mongo.db
+                li.l-skills-group__item
+                  h5.l-skills-group__title workFlow
+                  ul.l-skills-list
+                    li.c-skills-list__item
+                      .c-skill
+                        svg.c-skill__circle
+                          circle.c-skills__circle-under( cx="50%" cy="50%" r="50")
+                          circle.c-skills__circle-above.c-skills__circle-above--git( cx="50%" cy="50%" r="50" ransform="rotate(-90 60 60)")
+                        h6.c-skill__title git    
+                    li.c-skills-list__item
+                      .c-skill
+                        svg.c-skill__circle
+                          circle.c-skills__circle-under( cx="50%" cy="50%" r="50")
+                          circle.c-skills__circle-above.c-skills__circle-above--gulp( cx="50%" cy="50%" r="50" ransform="rotate(-90 60 60)")
+                        h6.c-skill__title gulp
+                    li.c-skills-list__item
+                      .c-skill
+                        svg.c-skill__circle
+                          circle.c-skills__circle-under( cx="50%" cy="50%" r="50")
+                          circle.c-skills__circle-above.c-skills__circle-above--bower( cx="50%" cy="50%" r="50" ransform="rotate(-90 60 60)")
+                        h6.c-skill__title bower
+    section.l-section.l-map   
+      .c-map#map   
+      .l-contacts
+        .c-block-title__wrapper
+          .c-block-title.c-block-title--contacts
