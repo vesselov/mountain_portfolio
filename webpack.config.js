@@ -3,7 +3,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const config = {
     output: {
-        filename: 'bundle.js'
+        filename: 'app.js'
     },
     plugins: [
         new UglifyJSPlugin({
