@@ -3568,6 +3568,26 @@ h1 {
     }
 }
 
+.c-block-contact__skype {
+    background-image: url(../images/skype.png) no-repeat;
+}
+
+.c-block-contact__sotial {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #336666;
+    display: flex;
+    margin-bottom: 29px;
+}
+
+.c-block-contact__skype,
+.c-block-contact__email,
+.c-block-contact__phone,
+.c-block-contact__location {
+    padding-left: 17px;
+}
+
 .c-block-title__text {
     display: inline-block;
     text-align: center;
@@ -3576,6 +3596,26 @@ h1 {
     font-size: 2.1875rem;
     line-height: 1.17;
     font-family: 'bernierRegular', sans-serif;
+}
+
+.footer {
+    background: #555b5e;
+    opacity: .5;
+    width: 100%;
+    height: 131px;
+    margin-top: -131px;
+    z-index: 100;
+}
+
+.c-block-title {
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    color: #455a64;
+    font-size: 2.1875rem;
+    line-height: 1.17;
+    font-family: 'bernierRegular', sans-serif;
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 48rem) {

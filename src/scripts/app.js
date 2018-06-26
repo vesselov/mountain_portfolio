@@ -511,8 +511,8 @@ $(function() {
             this.map = null;
             this.marker = null;
             this.settings = {
-                zoom: 12,
-                center: new google.maps.LatLng(47.08980151, 51.91058063),
+                zoom: 12.5,
+                center: new google.maps.LatLng(47.06980151, 51.80038063),
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 styles: [{
                         "featureType": "administrative",
