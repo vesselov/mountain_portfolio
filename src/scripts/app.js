@@ -463,7 +463,7 @@ var animateSkills = (function() {
                 if (checkDistance(scrollTop, $('.animate'))) {
                     animationActions['toSkills']();
                 } else {
-                    //item.removeClass('active');
+                    item.removeClass('active');
                 }
             })
         }
