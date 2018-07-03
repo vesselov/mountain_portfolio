@@ -8,7 +8,6 @@ block content
       .preloader__spinner
         .preloader__animation
         .preloader__percents.js-percents 0%
-
   section.l-section.l-welcome
     .l-parallax#parallaxMouse
       .l-parallax__layer
@@ -54,8 +53,7 @@ block content
                     a.c-social__link(href="https://www.linkedin.com/in/yevgeniy-vesselov-a0108510b/" target="_blank")
                       svg.c-social__icon.c-social__icon--in
                         use(xlink:href="assets/images/sprite.svg#in")
-
-              nav.nav-welcome
+            nav.nav-welcome
                 ul.nav-welcome__list
                   li.nav-welcome__item
                     a.nav-welcome__link(href="./my-works.html") Мои работы
@@ -63,42 +61,42 @@ block content
                     a.nav-welcome__link(href="./about.html") обо мне
                   li.nav-welcome__item
                     a.nav-welcome__link(href="./blog.html") блог
-            form.l-card__authorization#authorization(method="post")
-              .l-card__content
-                .c-block-title__wrapper
-                  .c-block-title.c-block-title--authorization
-                    h4.c-block-title__text.js-slider-subtitle  Авторизуйтесь
-                .c-authorization-form__validation#validation1
-                .c-authorization-form
-                  .c-authorization-form__item
-                    label.c-authorization-form__lebel
-                      input.c-authorization-form__input(name="text" type="text" placeholder="Логин" required)
-                  .c-authorization-form__item
-                    label.c-authorization-form__lebel
-                      input.c-authorization-form__input(name="password" type="password" placeholder="пароль" required)
-                  .c-checkbox   
-                  .c-checkbox__box.c-checkbox__box--checkbox  
-                    input.c-checkbox__input#noRobot(name="noRoboto" type="password") 
+          form.l-card__authorization#authorization(method="post")
+            .l-card__content
+              .c-block-title__wrapper
+                .c-block-title.c-block-title--authorization
+                  h4.c-block-title__text.js-slider-subtitle  Авторизуйтесь
+              .c-authorization-form__validation#validation1
+              .c-authorization-form
+                .c-authorization-form__item
+                  label.c-authorization-form__lebel
+                    input.c-authorization-form__input(name="text" type="text" placeholder="Логин" required)
+                .c-authorization-form__item
+                  label.c-authorization-form__lebel
+                    input.c-authorization-form__input(name="password" type="password" placeholder="пароль" required)
+              .c-checkbox   
+                .c-checkbox__box.c-checkbox__box--checkbox  
+                  input.c-checkbox__input#noRobot(name="noRoboto" type="password") 
+                  label.c-checkbox__label
+                p.c-checkbox__text Я человек
+              p.l-card__content-text Вы точно не робот?  
+              .l-card__content-radio
+                .c-checkbox
+                  .c-checkbox__box.c-checkbox__box--radio
+                    input.c-checkbox__input#radio(value="1" name="radio" type="radio") 
                     label.c-checkbox__label
-                  p.c-checkbox__text Я человек
-                p.l-card__content-text Вы точно не робот?  
-                .l-card__content-radio
-                  .c-checkbox
-                    .c-checkbox__box.c-checkbox__box--radio
-                      inpute.c-checkbox__input#radio(value="1" name="radio" type="radio") 
-                      label.c-checkbox__label
-                      p.c-checkbox__text Да
-                  .c-checkbox
-                    .c-checkbox__box.c-checkbox__box--radio
-                      inpute.c-checkbox__input#radio(value="0" name="radio" type="radio") 
-                      label.c-checkbox__label
-                      p.c-checkbox__text не уверен
-              .nav-welcome 
-                ul.nav-welcome__list
-                  li.nav-welcome__item   
-                    a.nav-welcome__link.js-authorization На главную 
-                  li.nav-welcome__item
-                    inpute.nav-welcome__link(type="submit" value="Войти")      
+                  p.c-checkbox__text Да
+                .c-checkbox
+                  .c-checkbox__box.c-checkbox__box--radio
+                    input.c-checkbox__input#radio(value="0" name="radio" type="radio") 
+                    label.c-checkbox__label
+                  p.c-checkbox__text не уверен
+            .nav-welcome 
+              ul.nav-welcome__list
+                li.nav-welcome__item   
+                  a.nav-welcome__link.js-authorization На главную 
+                li.nav-welcome__item
+                  input.nav-welcome__link(type="submit" value="Войти")      
       footer.l-welcome__footer
         p © Веселов Евгений  2018
 
