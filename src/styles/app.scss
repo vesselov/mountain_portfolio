@@ -742,7 +742,16 @@ h1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 9rem;
+}
+
+.footer-map {
+    width: 100%;
+    height: 200px;
+    background: #4C4A48;
+    opacity: .5;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
 }
 
 @media only screen and (max-width: 75rem) {
@@ -753,14 +762,12 @@ h1 {
 
 @media only screen and (max-width: 48rem) {
     .l-map {
-        padding-bottom: 14.25rem;
         height: 54.6875rem;
     }
 }
 
 @media only screen and (max-width: 30rem) {
     .l-map {
-        padding-bottom: 19rem;
         height: 67.6rem;
     }
 }
