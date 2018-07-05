@@ -2503,6 +2503,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
+    @media only screen and (max-width: 48rem) {}
 }
 
 .l-parallax__layer {
@@ -2614,6 +2615,9 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @media only screen and (max-width: 48rem) {
+        display: none;
+    }
 }
 
 .preloader__inner {
@@ -4210,6 +4214,14 @@ h1 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     fill: #fff;
+}
+
+@media only screen and (max-width: 30rem) {
+    .l-parallax {
+        background-image: url("../images/mauntain.png");
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
