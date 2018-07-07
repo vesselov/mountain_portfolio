@@ -1,22 +1,36 @@
 .footer-map
-  .footer-map__left
-    ul.navigete__list
-      li.navigate__item
-        a.navigate__link(href="#") Мои работы
-      li.navigate__item
-        a.navigate__link(href="#") Обо мне
-      li.navigate__item
-        a.navigate__link(href="#") Блог 
-      li.navigate__item
-        a.navigate__link(href="#") Авторизация
-    .footer-map__description Я веб разработчик из Атырау 
-  .footer-map__right
-    ul.social__item
+  .footer-map__up
+    ul.navigation__list
+      li.navigation__item
+        a.navigation__link Мои работы
+      li.navigation__item
+        a.navigation__link Обо мне
+      li.navigation__item
+        a.navigation__link Блог
+      li.navigation__item
+        a.navigation__link Авторизация
+    ul.social__list 
       li.social__item
-        a.social__link(href="") vk  
+        a.social__link
+          svg.social__icon
+            circle(cx="25" cy="25" r="25" style="stroke-width: 2; stroke: #fff")
+            circle(cx="25" cy="25" r="25" fill="#fff" )
+            use(xlink:href="assets/images/sprite.svg#in-cercl")
       li.social__item
-        a.social__link(href="") git
+        a.social__link
+          svg.social__icon
+            circle(cx="25" cy="25" r="25" style="stroke-width: 2; stroke: #fff")
+            circle(cx="25" cy="25" r="25" )
+            use(xlink:href="assets/images/sprite.svg#git-cercl")    
       li.social__item
-        a.social__link(href="") lindin   
-    .copy-right @ Веселов Евгений | сделано с любовь 2018
-        
+        a.social__link
+          svg.social__icon
+            circle(cx="25" cy="25" r="25" style="stroke-width: 2; stroke: #fff")
+            circle(cx="25" cy="25" r="25" )
+            use(xlink:href="assets/images/sprite.svg#vk-cercl")    
+    
+  .footer-map__down
+    p.footer-map__description Я веб разработчик из Атырау
+    p.footer-map__copyRihgt @ Веселов Евгений 2018
+     
+          
