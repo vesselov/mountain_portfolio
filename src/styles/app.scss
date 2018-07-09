@@ -1,108 +1,3 @@
-@font-face {
-    font-family: 'roboto';
-    src: url("../fonts/roboto/Roboto-Regular/Roboto-Regular.eot");
-    src: url("../fonts/roboto/Roboto-Regular/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular/Roboto-Regular.svg") format("svg"), url("../fonts/roboto/Roboto-Regular/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular/Roboto-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url("../fonts/roboto/Roboto-Italic/Roboto-Italic.eot");
-    src: url("../fonts/roboto/Roboto-Italic/Roboto-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Italic/Roboto-Italic.svg") format("svg"), url("../fonts/roboto/Roboto-Italic/Roboto-Italic.woff") format("woff"), url("../fonts/roboto/Roboto-Italic/Roboto-Italic.ttf") format("truetype");
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url("../fonts/roboto/Roboto-Bold/Roboto-Bold.eot");
-    src: url("../fonts/roboto/Roboto-Bold/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold/Roboto-Bold.svg") format("svg"), url("../fonts/roboto/Roboto-Bold/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold/Roboto-Bold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url("../fonts/roboto/Roboto-BoldItalic/Roboto-BoldItalic.eot");
-    src: url("../fonts/roboto/Roboto-BoldItalic/Roboto-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-BoldItalic/Roboto-BoldItalic.svg") format("svg"), url("../fonts/roboto/Roboto-BoldItalic/Roboto-BoldItalic.woff") format("woff"), url("../fonts/roboto/Roboto-BoldItalic/Roboto-BoldItalic.ttf") format("truetype");
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url("../fonts/roboto/Roboto-Light/Roboto-Light.eot");
-    src: url("../fonts/roboto/Roboto-Light/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Light/Roboto-Light.svg") format("svg"), url("../fonts/roboto/Roboto-Light/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light/Roboto-Light.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url("../fonts/roboto/Roboto-LightItalic/Roboto-LightItalic.eot");
-    src: url("../fonts/roboto/Roboto-LightItalic/Roboto-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-LightItalic/Roboto-LightItalic.svg") format("svg"), url("../fonts/roboto/Roboto-LightItalic/Roboto-LightItalic.woff") format("woff"), url("../fonts/roboto/Roboto-LightItalic/Roboto-LightItalic.ttf") format("truetype");
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url("../fonts/roboto/Roboto-Medium/Roboto-Medium.eot");
-    src: url("../fonts/roboto/Roboto-Medium/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Medium/Roboto-Medium.svg") format("svg"), url("../fonts/roboto/Roboto-Medium/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium/Roboto-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto';
-    src: url("../fonts/roboto/Roboto-MediumItalic/Roboto-MediumItalic.eot");
-    src: url("../fonts/roboto/Roboto-MediumItalic/Roboto-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-MediumItalic/Roboto-MediumItalic.svg") format("svg"), url("../fonts/roboto/Roboto-MediumItalic/Roboto-MediumItalic.woff") format("woff"), url("../fonts/roboto/Roboto-MediumItalic/Roboto-MediumItalic.ttf") format("truetype");
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'bernierRegular';
-    src: url("../fonts/bernier/BERNIERRegular-Regular/BERNIERRegular-Regular.eot");
-    src: url("../fonts/bernier/BERNIERRegular-Regular/BERNIERRegular-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bernier/BERNIERRegular-Regular/BERNIERRegular-Regular.woff") format("woff"), url("../fonts/bernier/BERNIERRegular-Regular/BERNIERRegular-Regular.woff2") format("woff2"), url("../fonts/bernier/BERNIERRegular-Regular/BERNIERRegular-Regular.otf") format("otf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'bernierDistressed';
-    src: url("../fonts/bernier/BERNIERDistressed-Regular/BERNIERDistressed-Regular.eot");
-    src: url("../fonts/bernier/BERNIERDistressed-Regular/BERNIERDistressed-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bernier/BERNIERDistressed-Regular/BERNIERDistressed-Regular.woff") format("woff"), url("../fonts/bernier/BERNIERDistressed-Regular/BERNIERDistressed-Regular.woff2") format("woff2"), url("../fonts/bernier/BERNIERDistressed-Regular/BERNIERDistressed-Regular.otf") format("otf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'bernierShade';
-    src: url("../fonts/bernier/BERNIERShade-Regular/BERNIERShade-Regular.eot");
-    src: url("../fonts/bernier/BERNIERShade-Regular/BERNIERShade-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bernier/BERNIERShade-Regular/BERNIERShade-Regular.woff") format("woff"), url("../fonts/bernier/BERNIERShade-Regular/BERNIERShade-Regular.woff2") format("woff2"), url("../fonts/bernier/BERNIERShade-Regular/BERNIERShade-Regular.otf") format("otf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-$descktop:1200px;
-$laptop:992px;
-$tablets:768px;
-$phones:480px;
-@mixin tablets {
-    @media screen and (max-width: $tablets) {
-        @content;
-    }
-}
-
-@mixin phones {
-    @media screen and (max-width: $phones) {
-        @content;
-    }
-}
-
-@import "common/footer.scss";
 * {
     margin: 0;
     padding: 0;
@@ -4237,3 +4132,7 @@ h1 {
         height: 100%;
     }
 }
+
+@import "common/footer.scss";
+@import "common/font.scss";
+@import "common/media.scss";
