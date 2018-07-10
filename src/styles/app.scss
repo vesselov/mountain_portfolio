@@ -2524,9 +2524,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    @media only screen and (max-width: 48rem) {
-        display: none;
-    }
+    @media only screen and (max-width: 48rem) {}
 }
 
 .preloader__inner {
@@ -4136,3 +4134,4 @@ h1 {
 @import "common/footer.scss";
 @import "common/font.scss";
 @import "common/media.scss";
+@import "common/main.scss";

@@ -1,0 +1,25 @@
+.work-content {
+    height: 100vh;
+    min-height: 40.625rem;
+    display: flex;
+}
+
+.work-content__right {
+    width: 50%;
+    background: #efeee9;
+}
+
+.work-content__left {
+    width: 50%;
+    background: #efebe0;
+}
+
+.review {
+    width: 100%;
+    padding: 2.8125rem 1.25rem 0;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    min-height: 100vh;
+    overflow: hidden;
+}

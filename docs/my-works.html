@@ -14,7 +14,6 @@
     <script src="assets/scripts/app.js" defer></script>
   </head>
   <body>
-    <h1>Мои работы</h1>
     <section class="l-section l-hero" id="parallaxScroll">
       <div class="l-hero__background js-hero-bg"> <img src="assets/images/bg-main.jpg"></div>
       <div class="l-section__wrapper l-hero__inner">
@@ -46,17 +45,36 @@
           <use xlink:href="assets/images/sprite.svg#icons--arrow_down"></use>
         </svg><a class="c-hamburger js-hamburger" id="hamburger"><i class="c-hamburger__stick c-hamburger__stick--top"></i><i class="c-hamburger__stick c-hamburger__stick--middle"></i><i class="c-hamburger__stick c-hamburger__stick--bottom"></i></a>
       </div>
-      <div class="l-navigation js-navigation"> 
-        <div class="c-navigation">
-          <ul class="c-navigation__list">
-            <li class="c-navigation__item"><a class="c-navigation__link" href="./portfolio.html">Мои работы</a></li>
-            <li class="c-navigation__item"><a class="c-navigation__link" href="./about.html">обо мне </a></li>
-            <li class="c-navigation__item"><a class="c-navigation__link" href="./blog.html">Блог</a></li>
-            <li class="c-navigation__item"><a class="c-navigation__link" href="./index.html">Авторизация     </a></li>
-          </ul>
-        </div>
+    </section>
+    <div class="l-navigation js-navigation"> 
+      <div class="c-navigation">
+        <ul class="c-navigation__list">
+          <li class="c-navigation__item"><a class="c-navigation__link" href="./my-works.html">Мои работы</a></li>
+          <li class="c-navigation__item"><a class="c-navigation__link" href="./about.html">обо мне </a></li>
+          <li class="c-navigation__item"><a class="c-navigation__link" href="./blog.html">Блог</a></li>
+          <li class="c-navigation__item"><a class="c-navigation__link" href="./index.html">Авторизация     </a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="l-section l-works js-section-two">
+      <svg class="c-triangle c-triangle__left c-triangle--works" viewbox="0 0 1000 150" preserveAspectRatio="none">
+        <polygon points="0,0 0,150 1000, 150"></polygon>
+      </svg>
+      <svg class="c-triangle c-triangle__right c-triangle--works" viewbox="0 0 1000 150" preserveAspectRatio="none">
+        <polygon points="0,150 1000,150 1000,0"></polygon>
+      </svg>
+      <div class="c-section-title c-section-title--works">
+        <svg class="c-section-title__img">
+          <use xlink:href="assets/images/sprite.svg#icons--works_header"> </use>
+        </svg>
+        <h2 class="c-section-title__text">Мои работы</h2>
+      </div>
+      <div class="work-content">
+        <div class="work-content__right"></div>
+        <div class="work-content__left"></div>
       </div>
     </section>
+    <section class="review"></section>
     <div class="footer-map">
       <div class="footer-map__up">
         <ul class="navigation__list">
