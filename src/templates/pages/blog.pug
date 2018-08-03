@@ -5,6 +5,40 @@ block variables
 
 block content
     include ../common/header.pug
+    section.l-section.l-blog.js-section-two#blog
+        svg.c-triangle.c-triangle__left.c-triangle--blog(viewbox="0 0 1000 150" preserveAspectRatio="none")
+          polygon(points="0,0 0,150 1000, 150")
+        svg.c-triangle.c-triangle__right.c-triangle--blog(viewbox="0 0 1000 150" preserveAspectRatio="none")
+          polygon(points="0,150 1000,150 1000,0")
+        .l-blog-inner.l-section__wrapper
+            .aside.l-blog-nav
+                .l-blog-nav__inner.js-blog-inner.fixed
+                    ul.l-blog-nav__list.js-blog-nav
+                            li.l-blog-nav__item.active.js-blog-item Самое важное в SASS 
+                            li.l-blog-nav__item.js-blog-item Приёмы в вёрстке, без которых не обходится ни один сайт
+                            li.l-blog-nav__item.js-blog-item Самый необходимый набор Gulp плагинов
+            ul.l-blog-content
+                li.l-blog-content__data.l-blog-data.active
+                    .l-blog-content__title Самое важное в SASS
+                    .l-blog-content__date 22 ноября 2016
+                    .l-blog-content__text
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempore pariatur quidem aspernatur cum officia nihil sunt iusto ad, ipsum illo temporibus quo, accusantium quisquam, harum sapiente culpa quae ab.
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem nihil nisi adipisci qui officiis non eum repellendus minus atque. Ea sapiente tempore quisquam at atque! Dolorum mollitia illo nisi?
 
+                li.l-blog-content__data.l-blog-data
+                    .l-blog-content__title Приёмы в вёрстке, без которых не обходится ни один сайт
+                    .l-blog-content__date 13 ноября 2016
+                    .l-blog-content__text
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sequi. Placeat dignissimos fugiat consequuntur. Cum, itaque. Quibusdam earum dolores incidunt ratione commodi adipisci quam aperiam aut at dolorem non voluptas illum voluptatibus blanditiis nisi beatae accusamus eveniet, neque doloribus, et magnam nostrum sed? Fuga error pariatur doloremque, et velit ipsam, architecto ut inventore adipisci minus quos facilis! Provident, dolores soluta.
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptas, voluptatum nisi, magni est sed quas qui excepturi fugit libero voluptates quasi aliquam. Nesciunt quis recusandae cupiditate rerum accusamus hic vitae, autem consectetur voluptatem laborum sequi tempore perspiciatis dolore! Possimus earum velit error dignissimos debitis odit quo reprehenderit impedit eligendi.
+
+                li.l-blog-content__data.l-blog-data
+                    .l-blog-content__title Самый необходимый набор Gulp плагинов
+                    .l-blog-content__date 5 ноября 2016
+                    .l-blog-content__text
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque veritatis cupiditate aliquid quod animi distinctio sunt eos rem dignissimos, doloremque suscipit. Facere libero at, dignissimos doloremque aspernatur a animi neque, nisi quisquam eaque sunt enim quidem, temporibus suscipit nobis similique excepturi. Magni, illo recusandae.                 
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit minima cupiditate unde, voluptate maxime illo itaque ipsa. Ad qui temporibus tempore corrupti fugiat? Mollitia aut nostrum cupiditate? Asperiores aspernatur excepturi nulla tempore, amet laudantium distinctio dolor a saepe sed quisquam nemo quam error voluptates eveniet repudiandae delectus commodi dolores quis, officiis culpa. Eos tempore sapiente tempora debitis. Officiis error accusamus, molestiae rem id laudantium vitae veritatis omnis magnam totam?
+                
+         
     include ../common/footer.pug
 
