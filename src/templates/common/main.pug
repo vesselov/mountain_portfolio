@@ -12,3 +12,50 @@ section.l-section.l-works.js-section-two
     .work-content__left
 section.review
     
+section.l-section.l-reviews
+        .l-reviews__background
+          img.js-reviews-bg(src="assets/images/bg-footer.png")
+        .c-section-title.c-section-title--reviews
+          svg.c-section-title__img
+            use(xlink:href="assets/images/sprite.svg#icons--about_header")
+          h2.c-section-title__text Что обо мне говорят        
+        ul.l-reviews-list
+          li.c-reviews-item
+            i.c-reviews-item__icon
+            p.c-reviews-item__text обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!           
+            .c-reviews-hero
+              img.c-reviews-hero__img(src="assets/images/dmitriy.jpg" alt="review-hero" title="review-hero")
+              .c-reviews-hero__content
+                p.c-reviews-hero__name Ковальчук Дмитрий
+                p основатель Loftschool
+          li.c-reviews-item
+            i.c-reviews-item__icon
+            p.c-reviews-item__text Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!            
+            .c-reviews-hero
+              img.c-reviews-hero__img(src="assets/images/vladimir.jpg" alt="review-hero" title="review-hero")
+              .c-reviews-hero__content
+                p.c-reviews-hero__name Сабанцев Владимир
+                p преподаватель
+        form.c-feedback__wrapper.js-feedback-wrapper#feedbackForm(method="post" action="#")
+          .c-feedback__bg.js-feedback-bg
+          .c-feedback
+            .c-feedback__inner
+              .c-block-title__wrapper
+                .c-block-title.c-block-title--feedback
+                  h4.c-block-title__text.js-slider-subtitle Связаться со мной
+          
+              .c-feedback-form
+                .c-feedback-form__item
+                  label.c-feedback-form__lebel
+                    input.c-feedback-form__input(name="text" type="text" placeholder="Имя" required)
+                .c-feedback-form__item
+                  label.c-feedback-form__lebel
+                    input.c-feedback-form__input(name="email" type="email" placeholder="Email" required)                            
+                .c-feedback-form__item
+                  label.c-feedback-form__lebel
+                    textarea.c-feedback-form__textarea(name="textarea" placeholder="Ваше сообщение" required)
+            .c-feedback-buttons
+              input.c-feedback-button.c-feedback-button--send(type="submit" value="Отправить")
+              input.c-feedback-button.c-feedback-button--clear(type="reset" value="Очистить")
+        svg.c-arrow.c-arrow--feedback#arrow(viewBox="0 0 25.18 16.164")
+          use(xlink:href="assets/images/sprite.svg#icons--arrow_down")

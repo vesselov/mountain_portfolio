@@ -75,6 +75,71 @@
       </div>
     </section>
     <section class="review"></section>
+    <section class="l-section l-reviews">
+      <div class="l-reviews__background"><img class="js-reviews-bg" src="assets/images/bg-footer.png"></div>
+      <div class="c-section-title c-section-title--reviews">
+        <svg class="c-section-title__img">
+          <use xlink:href="assets/images/sprite.svg#icons--about_header"></use>
+        </svg>
+        <h2 class="c-section-title__text">Что обо мне говорят        </h2>
+      </div>
+      <ul class="l-reviews-list">
+        <li class="c-reviews-item"><i class="c-reviews-item__icon"></i>
+          <p class="c-reviews-item__text">обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!           </p>
+          <div class="c-reviews-hero"><img class="c-reviews-hero__img" src="assets/images/dmitriy.jpg" alt="review-hero" title="review-hero">
+            <div class="c-reviews-hero__content">
+              <p class="c-reviews-hero__name">Ковальчук Дмитрий</p>
+              <p>основатель Loftschool</p>
+            </div>
+          </div>
+        </li>
+        <li class="c-reviews-item"><i class="c-reviews-item__icon"></i>
+          <p class="c-reviews-item__text">Этот код выдержит любые испытания. Только пожалуйста, не загружайте сайт на слишком старых браузерах!            </p>
+          <div class="c-reviews-hero"><img class="c-reviews-hero__img" src="assets/images/vladimir.jpg" alt="review-hero" title="review-hero">
+            <div class="c-reviews-hero__content">
+              <p class="c-reviews-hero__name">Сабанцев Владимир</p>
+              <p>преподаватель</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <form class="c-feedback__wrapper js-feedback-wrapper" id="feedbackForm" method="post" action="#">
+        <div class="c-feedback__bg js-feedback-bg"></div>
+        <div class="c-feedback">
+          <div class="c-feedback__inner">
+            <div class="c-block-title__wrapper">
+              <div class="c-block-title c-block-title--feedback">
+                <h4 class="c-block-title__text js-slider-subtitle">Связаться со мной</h4>
+              </div>
+            </div>
+            <div class="c-feedback-form">
+              <div class="c-feedback-form__item">
+                <label class="c-feedback-form__lebel">
+                  <input class="c-feedback-form__input" name="text" type="text" placeholder="Имя" required>
+                </label>
+              </div>
+              <div class="c-feedback-form__item">
+                <label class="c-feedback-form__lebel">
+                  <input class="c-feedback-form__input" name="email" type="email" placeholder="Email" required>
+                </label>
+              </div>
+              <div class="c-feedback-form__item">
+                <label class="c-feedback-form__lebel">
+                  <textarea class="c-feedback-form__textarea" name="textarea" placeholder="Ваше сообщение" required></textarea>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="c-feedback-buttons">
+            <input class="c-feedback-button c-feedback-button--send" type="submit" value="Отправить">
+            <input class="c-feedback-button c-feedback-button--clear" type="reset" value="Очистить">
+          </div>
+        </div>
+      </form>
+      <svg class="c-arrow c-arrow--feedback" id="arrow" viewBox="0 0 25.18 16.164">
+        <use xlink:href="assets/images/sprite.svg#icons--arrow_down"></use>
+      </svg>
+    </section>
     <div class="footer-map">
       <div class="footer-map__up">
         <ul class="navigation__list">
