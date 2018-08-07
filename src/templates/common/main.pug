@@ -7,11 +7,20 @@ section.l-section.l-works.js-section-two
     svg.c-section-title__img
       use(xlink:href="assets/images/sprite.svg#icons--works_header") 
     h2.c-section-title__text Мои работы
-  .work-content
-    .work-content__right
-    .work-content__left
-section.review
-    
+  .l-works__content#slider
+    .l-works__col_left
+      .l-works__wrapper.l-works__wrapper--left
+        .c-slider__image-wrapper.js-slider-display
+          img.c-slider__image.js-slider-display-img(src="assets/images/resume.jpg" alt="project-image" title="project-image")
+        .c-work
+          .c-block-title__wrapper
+            .c-block-title.c-block-title--undefined
+                h4.c-block-title__text.js-slider-subtitle Личный сайт Веселова Евгения               
+          p.c-work__tehnologes.js-slider-tehnologes HTML5, CSS3, PUG, STYLUS, JAVASCRIPT
+          a.c-work__link.js-slider-site(href="https://www.google.com" target="_blank")
+            span.c-work__link-text Посмотреть сайт
+            svg.c-work__link-icon
+              use(xlink:href="assets/images/sprite.svg#icons--link")
 section.l-section.l-reviews
   .l-reviews__background
     img.js-reviews-bg(src="assets/images/bg-footer.png")
