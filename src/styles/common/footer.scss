@@ -22,19 +22,27 @@
         font-size: 15px;
         font-weight: 400;
         @include tablets {
-            flex-direction: column
+            flex-direction: column;
         }
     }
     
     .navigation__item {
         margin-left: 30px;
         color: #ffffff;
+        @include tablets {
+            margin-left: 10px;
+        }
+
     }
     
     .navigation__list {
         display: flex;
         @include tablets {
             margin: 30px 20px;
+            
+        }
+        @include phones {
+            margin: 10px 5px;
         }
     }
     
@@ -50,6 +58,7 @@
         color: #a1a3a5;
         @include tablets {
             flex-direction: column;
+            justify-content: center;
         }
     }
     
