@@ -100,13 +100,14 @@ var preloader = (function() {
         preloader = $('.preloader'),
         persentsTotal = 0,
         cardAnimate = $('.l-card__wrapper');
+    
     var imgPath = $('*').map(function(ind, element) {
 
         var
             background = $(element).css('background-image'),
             path = '';
         var isImg = $(element).is('img');
-
+       
         if (background != 'none') {
             path = background.replace('url("', '').replace('")', '')
         }
@@ -150,14 +151,22 @@ var preloader = (function() {
     return {
         init: function() {
             var imgs = imgPath.toArray();
+           
             loadImages(imgs);
         }
     }
 }());
 
-$(function() {
-    preloader.init();
+$(function() { 
+    var widthY = document.body.clientWidth;
+    if(!widthY < 450){
+        preloader.init();      
+}else{
+    
+}
+   
 });
+
 //Анимация для букв слайдера на странице "портфолио"
 
 if ($('#slider').length) {
