@@ -117,10 +117,11 @@ var preloader = (function() {
         }
 
         if (path) {return path;}
-        if ($(window).width() <= 540){
-            return preloader.remove()
-            console.log("размер -540")
-        }
+       // if ($(window).width() <= 540){
+        //    return preloader.remove()
+            
+        //    console.log("размер -540")
+        //}
     });
 
     var setPersents = function(total, current) {
@@ -706,7 +707,8 @@ var ParallaxMouse = (function() {
         init: function() {
             var
                 parallaxContainer = document.getElementById('parallaxMouse'),
-                layers = parallaxContainer.children;
+                layers = parallaxContainer.children,
+                parallaxMouse2 = document.getElementById('parallaxMouse2');
 
             window.addEventListener('mousemove', function(e) {
                 var
@@ -714,7 +716,12 @@ var ParallaxMouse = (function() {
                     pageY = e.pageY,
                     initialX = (window.innerWidth / 2) - pageX,
                     initialY = (window.innerHeight / 2) - pageY;
+                  //  if ($(window).width() <= 540){
+                      //  parallaxContainer.remove()
+                     //   layers.remove()
+                  //  }else{
 
+                   // }
                 [].slice.call(layers).forEach(function(layer, i) {
                     var
                         divider = i / 100,
@@ -723,7 +730,7 @@ var ParallaxMouse = (function() {
                         bottomPosition = (window.innerHeight / 2) * divider,
                         layerStyle = layer.style,
                         transformString = 'translate3d(' + positionX + 'px, ' + positionY + 'px, 0)';
-
+                    
                     layerStyle.transform = transformString;
                     layerStyle.webkitTransform = transformString;
                     layerStyle.oTransform = transformString;
